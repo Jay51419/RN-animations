@@ -4,6 +4,8 @@ import React from "react";
 import { View, Text } from "react-native";
 import Home from "../screens/Home";
 import { CurvedBouncingBottomTab } from "../screens/CurvedBouncingBottomTab.tsx";
+import Playground from "../screens/Playground/Playground";
+import { Reflectly } from "../screens/Reflectly";
 
 const Stack = createStackNavigator();
 const Navigation = () => {
@@ -22,6 +24,8 @@ const Navigation = () => {
           name="CurvedBouncingBottomTab"
           component={CurvedBouncingBottomTab}
         />
+        <Stack.Screen name="Playground" component={Playground} />
+        <Stack.Screen name="Reflectly" component={Reflectly} />
       </Stack.Navigator>
     </NavigationContainer>
   );

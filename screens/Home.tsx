@@ -3,7 +3,7 @@ import { View, Text } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
 const Home = ({ navigation }: { navigation: any }) => {
-  const tabs = ["CurvedBouncingBottomTab"];
+  const tabs = ["CurvedBouncingBottomTab", "Playground", "Reflectly"];
   return (
     <View style={{ flex: 1, backgroundColor: "#2d2f2b" }}>
       {tabs.map((e, i) => (
